@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 10px;
+        }
+        
+        h1.title {
+            color: rgb(36, 15, 56);
+            font-size: 86px;
+            text-align: center;
+        }
+
+    
+        section {
+            height: 50vh;
+            display: flex;
+            justify-content: flex-start;
+            height: 50vh;
+            align-items: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+       .section-content img {
+           width: 30vw;        
+           height: 30vw;      
+           max-width: 300px;   
+           max-height: 300px;  
+           object-fit: cover;
+           border-radius: 0;
+           display: flex;
+        }
+
+        
+        .section-content {
+           width: 80%;        
+           height: 80%;       
+           background-color: antiquewhite;
+           display: flex;
+           align-items: center;
+           gap: 20px;      
+           box-sizing: border-box;  
+        }
+
+        .section-content h2 {
+            flex: 1;
+            font-size: 2rem;
+            justify-content: center;
+            align-items: center;
+         }
+
+        section:nth-child(1),
+        section:nth-child(7) {
+          justify-content: flex-start;
+         }
+
+         section:nth-child(2),
+         section:nth-child(3),
+         section:nth-child(4),
+         section:nth-child(5),
+         section:nth-child(6) {
+          justify-content: flex-end;
+         }
+        #titlepage {
+            background-color: lavenderblush;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            font-size: 60px;
+            display: flex;
+            text-align: center;
+        }
+
+        h1 title {
+            text-align: center;
+          
+        }
+       
+        
+    </style>
+</head>
+
+<body>
+    <div id="titlepage">
+       <h1 class="title"> I have no money</h1>
+
+    </div>
+
+    <main>
+        <section data-aos="zoom-in-right"
+                data-aos-duration="2500">
+                <div class="section-content">
+            <h2>Hi! Do you want to go somewhere during fall break?</h2>
+            <img src="assets/1.jpg" alt="Hi">
+            </div>
+        </section>
+
+         <section data-aos="zoom-in-left"
+                  data-aos-duration="2500">
+             <div class="section-content">
+            <h2>Omg, yes ofcourse!</h2>
+            <img src="assets/2.jpg" alt="Hi">
+            </div>
+        </section>
+
+        <section data-aos="zoom-in-left"
+                 data-aos-duration="2500">
+             <div class="section-content">
+            <h2>Oh, but wait..</h2>
+            <img src="assets/3.jpg" alt="Hi">
+            </div>
+        </section>
+
+        <section data-aos="zoom-in-left"
+                 data-aos-duration="2500">
+             <div class="section-content">
+            <h2>my wallet is empty...</h2>
+            <img src="assets/4.jpg" alt="Hi">
+            </div>
+        </section>
+
+        <section data-aos="zoom-in-left"
+                data-aos-duration="2500">
+             <div class="section-content">
+            <h2>very empty...</h2>
+            <img src="assets/5.jpg" alt="Hi">
+            </div>
+        </section>
+
+         <section data-aos="zoom-in-left"
+                  data-aos-duration="2500">
+            <div class="section-content">
+            <h2>Nevermind, my wallet is 100% empty</h2>
+            <img src="assets/6.jpg" alt="Hi">
+            </div>
+        </section>
+
+         <section data-aos="zoom-in-right"
+                  data-aos-duration="2500">
+            <div class="section-content">
+            <h2>WHAT?!</h2>
+            <img src="assets/7.jpg" alt="Hi">
+            </div>
+        </section>
+
+    </main>
+
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
